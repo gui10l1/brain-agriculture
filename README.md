@@ -1,73 +1,48 @@
-# React + TypeScript + Vite
+# Brain Agriculture
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é dedicado ao desafio técnico proposto pela Brain Agriculture.
 
-Currently, two official plugins are available:
+# Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto faz uso do Vite + ReactJS + Typescript.
 
-## React Compiler
+# Inicializando o projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Para iniciar e executar este projeto é preciso seguir os seguintes passos:
 
-## Expanding the ESLint configuration
+- Instalar as dependências
+- Executar servidor local
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Gerenciador de pacotes
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Este projeto faz uso do `pnpm` como seu principal gerenciador de pacotes.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Para seguir com os seguintes passos, tenha certeza de que esta ferramenta está
+instalada e pronta para uso no seu ambiente de desenvolvimento.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Para instalar o `pnpm` siga a [documentação](https://pnpm.io/installation).
+
+## Instalando as dependencias
+
+Para instalar as dependencias execute o seguinte comando na raiz do projeto:
+
+```bash
+pnpm i
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Ao ser executado, este comando vai instalar todos as dependências do projeto.
+Aguarde o tempo de instalação antes de prosseguir.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Executando o projeto
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Para executar, rode o seguinte comando na raiz do projeto:
+
+```bash
+pnpm dev
 ```
+
+Este comando vai executar o servidor local na porta `5137`. Verifique o endereço
+http://localhost:5173 e veja a execução do projeto.
+
+O endereço também vai aparecer no terminal quando o comando acima tiver sido 
+executado.
