@@ -46,3 +46,16 @@ http://localhost:5173 e veja a execução do projeto.
 
 O endereço também vai aparecer no terminal quando o comando acima tiver sido 
 executado.
+
+# Testes
+
+Este projeto faz uso do Jest e RTL (React Testing Library) para automatizar o
+ciclo de testes durante o desenvolvimento.
+
+Para executar os testes, rode o seguinte comando na raiz do projeto:
+
+```bash
+pnpm test
+```
+
+Este comando vai rodar os testes e mostrará o feedback no final da execução.
