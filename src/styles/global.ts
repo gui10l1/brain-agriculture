@@ -5,6 +5,8 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     outline: 0;
+
+    font-family: 'Inter', sans-serif;
   }
 
   :root {
@@ -14,5 +16,9 @@ export default createGlobalStyle`
     --color-background-light: #F5F5DC;
     --color-text-dark: #4E342E;
     --color-background-dark: #2E7D32;
+  }
+
+  body {
+    background-color: #f4f4f4;
   }
 `;
