@@ -11,3 +11,9 @@ export const Container = styled.div`
 
   background-color: var(--color-background-light);
 `;
+
+export const Content = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`;
