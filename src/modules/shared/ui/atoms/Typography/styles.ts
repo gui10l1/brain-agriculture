@@ -2,7 +2,7 @@ import type { ElementType } from "react";
 import styled, { type WebTarget } from "styled-components";
 import type { ISize } from "./interfaces";
 
-export const getContainerElement = (type: WebTarget, size: ISize = 'md') => {
+export const getContainerElement = (type: WebTarget, size: ISize) => {
   const sizes: Record<ISize, number> = {
     xl: 32,
     lg: 24,
