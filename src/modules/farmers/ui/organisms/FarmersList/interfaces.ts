@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export interface IFarmer {
   id: number;
   name: string;
@@ -8,4 +10,12 @@ export interface IFarmer {
 
 export interface IFarmersListProps {
   farmers: IFarmer[];
+}
+
+export interface IColumn {
+  id: number;
+  name: string;
+  document: string;
+  created_at: string;
+  actions: ReactNode;
 }
