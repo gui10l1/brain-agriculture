@@ -1,6 +1,13 @@
 import styled from "styled-components";
+import type { IButton } from "./interfaces";
 
-export const Container = styled.button`
+const colors = {
+  success: 'var(--color-primary)',
+  danger: "#F44336",
+  warning: "#FF9800",
+}
+
+export const Container = styled.button<IButton>`
   border: 0;
 
   border-radius: 8px;
@@ -9,7 +16,7 @@ export const Container = styled.button`
 
   font-family: 'Inter', sans-serif;
 
-  background-color: var(--color-primary);
+  background-color: ${props => colors[props.variant || 'success']};
   color: white;
 
   cursor: pointer;
