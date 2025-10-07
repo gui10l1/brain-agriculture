@@ -17,6 +17,7 @@ export default function Form() {
             input={{
               type: 'text',
               placeholder: 'Nome do agricultor',
+              name: field.name,
               onChange: field.onChange,
               value: field.value,
             }}
@@ -33,6 +34,7 @@ export default function Form() {
             input={{
               type: 'text',
               placeholder: 'Nome do agricultor',
+              name: field.name,
               onChange: field.onChange,
               value: field.value,
             }}
