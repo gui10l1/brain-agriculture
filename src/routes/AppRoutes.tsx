@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import FarmersHomePage from "../modules/farmers/ui/pages/Home";
-import CreateFarmersPage from "../modules/farmers/ui/pages/Create";
+import FarmersHomePage from "../pages/Home";
+import CreateFarmersPage from "../pages/CreateFarmers";
 
 export default function AppRoutes() {
   return (

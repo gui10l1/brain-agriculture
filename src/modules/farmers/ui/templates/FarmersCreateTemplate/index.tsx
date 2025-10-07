@@ -1,6 +1,7 @@
 import Container from "../../../../shared/ui/atoms/Container";
 import Header from "../../../../shared/ui/organisms/Header";
-import Form from "../../organisms/Form";
+import FarmerForm from "../../organisms/FarmerForm";
+import { Form } from "./styles";
 
 export default function FarmersCreateTemplate() {
   return (
@@ -8,7 +9,9 @@ export default function FarmersCreateTemplate() {
       <Header showBackButton />
 
       <Container>
-        <Form />
+        <Form>
+          <FarmerForm />
+        </Form>
       </Container>
     </>
   );
