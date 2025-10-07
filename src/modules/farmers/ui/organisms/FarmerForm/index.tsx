@@ -1,17 +1,19 @@
 import Row from "../../../../shared/ui/atoms/Row";
 import InputGroup from "../../../../shared/ui/molecules/InputGroup";
 import { Controller, useForm } from 'react-hook-form';
-import type { IFormFarmerData } from "./interfaces";
+import type { IFormFarmerData, IFarmerFormProps } from "./interfaces";
 import Card from "../../../../shared/ui/molecules/Card";
 import FormAtom from "../../../../shared/ui/atoms/Form";
 import Button from "../../../../shared/ui/atoms/Button";
 
-export default function Form() {
-  const { control } = useForm<IFormFarmerData>();
+export default function FarmersForm({ defaultValues, onSubmit }: IFarmerFormProps) {
+  const { control, handleSubmit } = useForm<IFormFarmerData>({
+    defaultValues,
+  });
 
   return (
     <Card title="Agricultor">
-      <FormAtom>
+      <FormAtom onSubmit={handleSubmit(onSubmit || console.log)}>
         <Row>
           <Controller
             name="name"

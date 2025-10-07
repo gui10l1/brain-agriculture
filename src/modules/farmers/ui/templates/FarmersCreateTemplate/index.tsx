@@ -1,10 +1,13 @@
 import Container from "../../../../shared/ui/atoms/Container";
 import FarmerForm from "../../organisms/FarmerForm";
+import type { IFarmersCreateTemplate } from "./interfaces";
 
-export default function FarmersCreateTemplate() {
+export default function FarmersCreateTemplate({
+  onSubmit,
+}: IFarmersCreateTemplate) {
   return (
     <Container>
-      <FarmerForm />
+      <FarmerForm onSubmit={onSubmit} />
     </Container>
   );
 }
