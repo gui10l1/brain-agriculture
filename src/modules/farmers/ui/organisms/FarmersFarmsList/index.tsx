@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import { farmersService } from "../../../infra/services/FarmersService";
 import Card from "../../../../shared/ui/molecules/Card";
 
-export default function FarmsList() {
+export default function FarmersFarmsList() {
   const { id } = useParams<Record<string, string>>();
   const [farms, setFarms] = useState<IFarm[]>([]);
   const [, setFarmer] = useState<IFarmer | null>(null);
