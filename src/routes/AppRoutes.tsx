@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import FarmersHomePage from "../pages/Home";
 import CreateFarmersPage from "../pages/CreateFarmers";
+import DetailsFarmersPage from "../pages/FarmerDetails";
 
 export default function AppRoutes() {
   return (
@@ -15,7 +16,7 @@ export default function AppRoutes() {
           />
           <Route
             path="/farmers/:id"
-            element={null}
+            element={<DetailsFarmersPage />}
           />
         </Route>
       </Routes>
