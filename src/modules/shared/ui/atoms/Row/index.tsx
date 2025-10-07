@@ -1,9 +1,9 @@
 import type { IRow } from "./interfaces";
 import { Container } from "./styles";
 
-export default function Row({ children }: IRow) {
+export default function Row({ children, align }: IRow) {
   return (
-    <Container>
+    <Container align={align || 'left'}>
       {children}
     </Container>
   );
